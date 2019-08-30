@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'mainfont';
+    position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            height: 100%;
+        margin:0;
+        padding:0;
+        background-size: 100% ;
+        width:100%;  
+        color:black;
+    }
+    body:before {
+            content: "";
+            position: fixed;
+            height: 100%; width: 100%;
+            background: url('../img/ducal.jpg');
+            background-size: cover;
+            z-index: -1; /* Keep the background behind the content */     
+            -webkit-filter: blur(8px);
+        -webkit-background-size: cover; /* pour Chrome et Safari */
+        -moz-background-size: cover; /* pour Firefox */
+        -o-background-size: cover; /* pour Opera */
+        background-size: cover; /* version standardisée */
+        }
+
+@font-face{
+    font-family: 'mainfont';
+    src: url('JMH Typewriter.ttf');
+}
+
+#map {
+    height: 800px;
+    width: 100%;
+    display: none;
+}
+
+nav {
+    background: #230C0F;
+}
+
+.btn-start {
+    background: #230C0F;
+    color: white;
+    width: 30%;
+}
+
+.btn-start:hover {
+    color: black;
+    background: white;
+}
+
+.block {
+    background: rgb(0, 0, 0, 0.2);
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+main {
+    min-height: calc(100vh - 56px - 152px);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    color: white;
+    background: #230C0F;
+}
